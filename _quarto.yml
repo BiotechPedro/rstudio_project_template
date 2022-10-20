@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "{{cookiecutter.project_name}}"
+  navbar:
+    background: light
+    title: "{{cookiecutter.project_name}}"
+    left:
+      - text: Home
+        href: index.html  
+
+format:
+  html:
+    author: "{{cookiecutter.author_name}}"
+    toc: true
+    toc-location: left
+    code-fold: true
+    code-tools: true
+    code-overflow: scroll
+    fig-align: center
+    fig-width: 7
+    fig-height: 5
+    fig-format: png
+    smooth-scroll: true
+    theme: 
+      light: [cosmo, theme.scss]
+    df-print: paged
+    css: styles.css
+    number-sections: false
+    number-depth: 3
+    date: today
+    html-math-method: mathjax
+    link-external-icon: true
+    link-external-newwindow: true
+    citations-hover: true
+    footnotes-hover: true    
+
+execute:
+  freeze: auto
+  echo: true
+  error: false
+  warning: false
+  message: false
+
+editor: source
